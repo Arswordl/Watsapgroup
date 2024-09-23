@@ -52,13 +52,13 @@
 </head>
 <body>
 
-    <h2>Submit Your Number and Screenshot</h2>
-    <form id="submitForm" enctype="multipart/form-data">
-        <label for="phone">Phone Number (required):</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Enter your phone number">
-
+    <h2>Submit Your Payment Screenshot and phone Number</h2>
+  <form id="submitForm" enctype="multipart/form-data">
         <label for="screenshot">Payment Screenshot (required):</label>
         <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
+    
+        <label for="phone">Phone Number (required):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required placeholder="Enter your phone number">
 
         <input type="submit" value="Submit and Continue">
     </form>
